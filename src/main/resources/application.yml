@@ -1,0 +1,13 @@
+server:
+  port: 9095
+  servlet:
+    context-path: /api/integration
+
+keycloak:
+  realm: spring-boot-code
+  domain: localhost:8080
+  adminClientId: admin-cli
+  adminClientSecret: 08DbBBnWQkZDgOipCLkm1hi0guZA7nWa
+  client: authenticationClientId
+  urls:
+    auth: http://${keycloak.domain}
